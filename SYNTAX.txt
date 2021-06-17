@@ -10,7 +10,10 @@
 
 sudo docker build --build-arg account=kka18669.us-east-1  --build-arg  user=akrishna34qa  --build-arg  role=ACCOUNTADMIN --build-arg  warehouse=compute_wh  --no-cache . --tag snow_chnage5:latest
 
+sudo docker build --build-arg account=kka18669.us-east-1  --build-arg  user=akrishna34qa  --build-arg  role=ACCOUNTADMIN --build-arg  warehouse=compute_wh  --build-arg  SNOWFLAKE_PASSWORD=Asuccess34@ --no-cache . --tag snow_chna
+
 --jenkins
 sudo docker run -p 8080:8080 -p 5000:5000  -v /var/run/docker.sock:/var/run/docker.sock --name jenkins1 -d krish733428/jenkins-docker
 
+# ENTRYPOINT schemachange  -f './'  -a 'dwa31784.us-east-1' -u 'akrishna34' -r 'ACCOUNTADMIN' -w 'compute_wh'  -d 'METADATA' -c 'METADATA.SCHEMACHANGE.CHANGE_HISTORY'
 

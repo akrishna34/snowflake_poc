@@ -9,12 +9,12 @@ RUN pip install -r requirement.txt
 
 COPY . .
 
-# ENV SNOWFLAKE_PASSWORD=Asuccess34@
-ARG SNOWFLAKE_PASSWORD=Asuccess34@
-ARG account=dwa31784.us-east-1
-ARG user=akrishna34
-ARG role=ACCOUNTADMIN
-ARG warehouse=compute_wh
+
+ARG SNOWFLAKE_PASSWORD
+ARG account
+ARG user
+ARG role
+ARG warehouse
 
 ENV account=$account
 ENV user=$user
