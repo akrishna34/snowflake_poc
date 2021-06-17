@@ -23,6 +23,5 @@ ENV warehouse=$warehouse
 
 ENV SNOWFLAKE_PASSWORD=$SNOWFLAKE_PASSWORD
 
-# ENTRYPOINT schemachange  -f './'  -a 'dwa31784.us-east-1' -u 'akrishna34' -r 'ACCOUNTADMIN' -w 'compute_wh'  -d 'METADATA' -c 'METADATA.SCHEMACHANGE.CHANGE_HISTORY'
 
 ENTRYPOINT schemachange  -f './'  -a $account -u $user -r $role -w $warehouse  -d 'METADATA' -c 'METADATA.SCHEMACHANGE.CHANGE_HISTORY'
