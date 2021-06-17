@@ -1,4 +1,6 @@
+
  
+
 CREATE DATABASE  DYDK_K2;
 
 USE DATABASE DYDK_K2;
@@ -14,4 +16,9 @@ create or replace  TABLE dyd_k_2 (
     VALUE NUMBER(18,9),
    CREATED INT ,
   ENDED INT
+
 );
+
+);
+
+
