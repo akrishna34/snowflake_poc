@@ -3,4 +3,4 @@ USE DATABASE DYDK_K2;
 USE SCHEMA KRISH;
 
 ALTER TABLE dyd_k_2
-ADD Telemail2 varchar(255);
+ADD Telemail3 varchar(255);
